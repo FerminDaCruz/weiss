@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "Smack",
+        "description": "La hamburguesa más deliciosa del mundo",
+        "ingredients": [
+            "Triple carne",
+            "Triple cheddar",
+            "Triple bacon",
+            "Ketchup"
+        ],
+        "model": "/models/smack.glb"
+    },
+    {
+        "id": 2,
+        "name": "Gulosa",
+        "description": "solo para los amantes de la carne",
+        "ingredients": [
+            "Doble carne",
+            "Doble cheddar",
+            "Huevo frito",
+            "Aros de cebolla",
+            "Bacon ahumado"
+        ],
+        "model": "/models/gulosa.glb"
+    },
+    {
+        "id": 3,
+        "name": "Caprichosa",
+        "description": "Caprichosa con todo",
+        "ingredients": [
+            "Medallón de quinoa",
+            "Queso brie",
+            "Rúcula",
+            "Guacamole"
+        ],
+        "model": "/models/caprichosa.glb"
+    }
+]
