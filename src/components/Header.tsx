@@ -14,9 +14,6 @@ export default function Header() {
                 <Link href="#">Inicio</Link>
                 <Link href="#">Menú</Link>
                 <Link href="#">Nosotros</Link>
-                <Link href="#">Franquicias</Link>
-                <Link href="#">Club Weiss</Link>
-                <Link href="#">Delivery</Link>
             </nav>
         </header>
     );
