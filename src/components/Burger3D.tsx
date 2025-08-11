@@ -17,8 +17,8 @@ export default function Burger3D({ burger }: { burger: Burger }) {
                 {burger.name}
             </h2>
             <p className="text-white/50">{burger.description}</p>
-            <div style={{ width: "100%", height: "1000px" }}>
-                <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
+            <div style={{ width: "100%", height: "500px" }}>
+                <Canvas camera={{ position: [0, 0, 3], fov: 60 }}>
                     <ambientLight intensity={0.6} />
                     <directionalLight position={[5, 5, 5]} intensity={1} />
                     <BurgerModel modelPath={burger.model} />
