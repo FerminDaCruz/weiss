@@ -16,7 +16,13 @@ export default function Burger3D({ burger }: { burger: Burger }) {
             <h2 className="text-2xl md:text-5xl font-bold pt-20">
                 {burger.name}
             </h2>
-            <p className="text-white/50">{burger.description}</p>
+            <p className="text-white/50 text-center">
+                {burger.ingredients.map((ingredient, index) =>
+                    burger.ingredients.length === index + 1
+                        ? ingredient
+                        : `${ingredient}, `
+                )}
+            </p>
             <div style={{ width: "100%", height: "500px" }}>
                 <Canvas camera={{ position: [0, 0, 3], fov: 60 }}>
                     <ambientLight intensity={0.6} />
