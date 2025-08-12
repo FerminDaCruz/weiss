@@ -7,9 +7,7 @@ export default function HomePage() {
         <>
             <Slider />
             <Deliverys />
-            <div className="h-screen w-full bg-black p-10">
-                <SpecialBurger />
-            </div>
+            <div className="h-screen w-full bg-black p-10"></div>
         </>
     );
 }
