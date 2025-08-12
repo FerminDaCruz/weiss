@@ -1,5 +1,5 @@
-import { Model3DSlider } from "@/components/Model3DSlider";
+import { Slider } from "@/components/Slider";
 
 export default function HomePage() {
-    return <Model3DSlider />;
+    return <Slider />;
 }

@@ -12,31 +12,19 @@ function BurgerModel({ modelPath }: { modelPath: string }) {
 
 export default function Burger3D({ burger }: { burger: Burger }) {
     return (
-        <div className="flex flex-col justify-center items-center">
-            <h2 className="text-2xl md:text-5xl font-bold pt-20">
-                {burger.name}
-            </h2>
-            <p className="text-white/50 text-center">
-                {burger.ingredients.map((ingredient, index) =>
-                    burger.ingredients.length === index + 1
-                        ? ingredient
-                        : `${ingredient}, `
-                )}
-            </p>
-            <div style={{ width: "100%", height: "500px" }}>
-                <Canvas camera={{ position: [0, 0, 3], fov: 60 }}>
-                    <ambientLight intensity={0.6} />
-                    <directionalLight position={[5, 5, 5]} intensity={1} />
-                    <BurgerModel modelPath={burger.model} />
-                    <OrbitControls
-                        enablePan={false}
-                        enableZoom={false}
-                        rotateSpeed={0.7}
-                        autoRotate={false}
-                        // Esto permite control táctil y con mouse para rotar el modelo
-                    />
-                </Canvas>
-            </div>
+        <div className="w-full h-[500px] md:h-[750px] absolute inset-0 z-30">
+            <Canvas camera={{ position: [0, 0, 3], fov: 60 }}>
+                <ambientLight intensity={0.6} />
+                <directionalLight position={[5, 5, 5]} intensity={1} />
+                <BurgerModel modelPath={burger.model} />
+                <OrbitControls
+                    enablePan={false}
+                    enableZoom={false}
+                    rotateSpeed={0.7}
+                    autoRotate={false}
+                    // Esto permite control táctil y con mouse para rotar el modelo
+                />
+            </Canvas>
         </div>
     );
 }
