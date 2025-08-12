@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
+import Header from "@/components/layout/Header";
 import { Passion_One, Roboto } from "next/font/google";
 
 const passionOne = Passion_One({

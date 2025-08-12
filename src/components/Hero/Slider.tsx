@@ -33,7 +33,7 @@ export function Slider() {
 
                 {/* Botones de navegación flotantes */}
                 <button
-                    className="absolute hidden md:inline-flex left-4 top-1/2 transform -translate-y-1/2  items-center justify-center w-10 h-10 rounded-md border border-gray-300 bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white/90 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="absolute hidden xl:inline-flex left-4 top-1/2 transform -translate-y-1/2  items-center justify-center w-10 h-10 rounded-md border border-gray-300 bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white/90 disabled:opacity-50 disabled:cursor-not-allowed z-30"
                     onClick={prevModel}
                     disabled={burgers.length <= 1}
                 >
@@ -41,13 +41,13 @@ export function Slider() {
                 </button>
 
                 <button
-                    className="absolute hidden md:inline-flex right-4 top-1/2 transform -translate-y-1/2  items-center justify-center w-10 h-10 rounded-md border border-gray-300 bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white/90 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="absolute hidden xl:inline-flex right-4 top-1/2 transform -translate-y-1/2  items-center justify-center w-10 h-10 rounded-md border border-gray-300 bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white/90 disabled:opacity-50 disabled:cursor-not-allowed z-30"
                     onClick={nextModel}
                     disabled={burgers.length <= 1}
                 >
                     <FaChevronRight className="h-4 w-4" />
                 </button>
-                <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 md:hidden flex justify-center items-center gap-3 z-30">
+                <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 xl:hidden flex justify-center items-center gap-3 z-30">
                     <button
                         className="inline-flex items-center justify-center w-10 h-10 rounded-md border border-gray-300 bg-white/80 backdrop-blur-sm text-gray-700 hover:bg-white/90 disabled:opacity-50 disabled:cursor-not-allowed"
                         onClick={prevModel}
