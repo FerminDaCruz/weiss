@@ -15,6 +15,7 @@ function BurgerModel({ modelPath }: { modelPath: string }) {
 }
 
 export default function Burger3D({ burger }: { burger: Burger }) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const controlsRef = useRef<any>(null);
 
     useEffect(() => {
