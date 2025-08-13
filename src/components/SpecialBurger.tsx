@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 export default function SpecialBurger() {
     return (
         <section className="relative bg-black overflow-hidden py-20 ">
@@ -7,7 +6,7 @@ export default function SpecialBurger() {
             <div className="hidden lg:block">
                 <div className="container mx-auto px-4 py-0 w-full" id="1">
                     <div
-                        className="relative min-h-[400px] w-full rounded-xl overflow-hidden max-w-[1400px]"
+                        className="relative min-h-[400px] w-full rounded-xl overflow-hidden max-w-4xl mx-auto"
                         id="2"
                     >
                         {/* Lado Izquierdo - Contenido */}
@@ -19,11 +18,11 @@ export default function SpecialBurger() {
                                 width: "60%",
                             }}
                         >
-                            <div className="max-w-sm text-black space-y-6 z-10">
-                                <h2 className="text-4xl xl:text-5xl font-bold leading-tight">
+                            <div className="max-w-xs text-black space-y-6 z-10">
+                                <h2 className="text-4xl  font-bold leading-tight">
                                     Edición Limitada
                                 </h2>
-                                <p className="text-lg lg:text-xl text-black leading-relaxed">
+                                <p className="text-lg text-black leading-relaxed">
                                     Cada mes creamos una burger especial que nos
                                     vuela la cabeza. Es la forma en la que
                                     probamos nuevas recetas y hacemos lo que más
