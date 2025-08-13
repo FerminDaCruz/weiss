@@ -23,9 +23,24 @@
     }
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .animate-scroll {
     animation: scroll 10s linear infinite;
     will-change: transform;
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out;
 }
 
 body {

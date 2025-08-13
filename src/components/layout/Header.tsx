@@ -27,6 +27,7 @@ export default function Header() {
                     width={100}
                     height={100}
                     alt="weiss-logo"
+                    className="pt-3 md:pt-0"
                 />
                 <nav className="flex items-center justify-center gap-3 lg:gap-0">
                     <Link
